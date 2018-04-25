@@ -1,0 +1,35 @@
+﻿@model Assignment3.Models.phones1
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>phones1</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.phones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phones)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.color)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.phoneID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
